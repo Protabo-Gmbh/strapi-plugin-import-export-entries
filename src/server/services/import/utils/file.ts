@@ -180,8 +180,9 @@ const isValidFileUrl = (
   };
 } => {
   try {
+    strapi.log.error('before getFileDataFromRawUrl');
     const fileData = getFileDataFromRawUrl(url);
-
+    strapi.log.error('before isExtensionAllowed');
     return {
       isValid: isExtensionAllowed(fileData.extension, allowedFileTypes),
       fileData: {

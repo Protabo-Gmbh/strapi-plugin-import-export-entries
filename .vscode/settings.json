@@ -11,5 +11,6 @@
       "database": "${workspaceFolder:import-export-entries}/tests/helpers/test-app/data/data.sqlite",
       "name": "Import Export Entries Test"
     }
-  ]
+  ],
+  "files.autoSave": "afterDelay"
 }
